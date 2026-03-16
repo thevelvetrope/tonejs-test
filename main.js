@@ -16,7 +16,13 @@ dialogCloseButton.addEventListener("click", () => {
 const synth = new Tone.Synth().toDestination();
 
 //play a note
-function playNote() {
-    synth.triggerAttackRelease("C4", "8n");
+function startnote() {
+    synth.triggerAttack("C4");
 }
-playButton.addEventListener("click", playNote);
+
+function endnote() {
+    synth.triggerRelease();
+}
+
+playButton.addEventListener("mousedown", startnote);
+playButton.addEventListener("mouseup", endnote);
