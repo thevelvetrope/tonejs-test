@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Tone.js Example</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.3.5/Tone.min.js"></script>
 
@@ -13,6 +11,18 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="main.js" defer></script>
-    
+</head>
+<body>
+
+    <dialog id="intro-dialog">
+        <h2>Welcome to the Tone.js Example!</h2>
+        <p>This page will make sound.</p>
+        <button id="dialog-close-button">Close</button>
+    </dialog>
+
+    <h2>Tone.js Example</h2>
+    <p>Click the button below to play a "hello" sound using <b>Tone.js</b>.</p>
+    <button id="play-button">Hello!</button>
+
 </body>
 </html>
